@@ -41,6 +41,7 @@
 </template>
 
 <script setup lang="tsx">
+import { ref } from "vue";
 import { useTable, useForm, useUpsert, useCrud } from "./hooks";
 import { EditPen } from "@element-plus/icons-vue";
 
@@ -49,7 +50,7 @@ interface Data {
 	age?: number;
 	[key: string]: any;
 }
-
+const name = ref("App");
 const Upsert = useUpsert<Data>({
 	items: [
 		{

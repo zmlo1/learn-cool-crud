@@ -5,8 +5,6 @@ import { watch, ref, nextTick, getCurrentInstance, Ref, inject, provide } from "
 function useParent(name: string, r: Ref) {
 	const d = getCurrentInstance();
 
-	console.log(d);
-
 	if (d) {
 		let parent = d.proxy?.$.parent;
 
@@ -65,7 +63,7 @@ function useEvent(
 // crud
 export function useCrud(options?: ClCrud.Options, cb?: (app: ClCrud.Ref) => void) {
 	const Crud = ref<ClCrud.Ref>();
-	useParent("cl-crud", Crud);
+	useParent("cl-crud", Crud); // 对 cl-crud 组件没有效果
 
 	if (options) {
 		// 测试模式
