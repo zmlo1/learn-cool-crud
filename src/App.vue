@@ -2,7 +2,7 @@
 	<div>
 		<div class="title">CRUD DEMO v7.0.0</div>
 
-		<cl-crud ref="Crud">
+		<cl-crud ref="Crud" :border="false" padding="0px">
 			<cl-row>
 				<cl-add-btn />
 				<cl-adv-btn />

@@ -25,7 +25,7 @@ export default defineComponent({
 		// 当前实例
 		const inst = getCurrentInstance();
 
-		// 配置
+		// 配置 => useCrud.option
 		const config = reactive<ClCrud.Config>(mergeConfig(inject("useCrud__options") || {}));
 
 		// 事件
