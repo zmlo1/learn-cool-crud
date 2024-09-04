@@ -70,8 +70,17 @@ const Upsert = useUpsert<Data>({
 			}
 		},
 		{
+			group: "A",
+			prop: "name",
+			label: "Name",
+			component: {
+				name: "el-input"
+			}
+		},
+		{
 			group: "B",
 			prop: "age",
+			label: "Age",
 			component: {
 				name: "el-input"
 			}
@@ -79,6 +88,7 @@ const Upsert = useUpsert<Data>({
 		{
 			group: "B",
 			prop: "证书",
+			label: "证书",
 			component: {
 				name: "el-input"
 			},

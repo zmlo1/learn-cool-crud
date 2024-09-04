@@ -74,6 +74,8 @@ export default defineComponent({
 		// 导出
 		expose(crud);
 
+		console.log(mitt);
+
 		return () => {
 			return (
 				<div

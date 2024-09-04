@@ -124,6 +124,7 @@ export function useHelper({ config, crud, mitt }: Options) {
 
 	// 打开新增
 	function rowAdd() {
+		console.log("rowAdd");
 		mitt.emit("crud.proxy", {
 			name: "add"
 		});
