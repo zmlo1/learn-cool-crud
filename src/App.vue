@@ -139,23 +139,24 @@ const Table = useTable<Data>({
 	],
 
 	columns: [
+		{ type: "selection", width: 60 },
 		{
 			label: "姓名",
-			prop: "name",
-			search: {
-				component: {
-					name: "el-date-picker"
-				}
-			}
+			prop: "name"
+			// search: {
+			// 	component: {
+			// 		name: "el-date-picker"
+			// 	}
+			// }
 		},
 		{
 			label: "手机号",
-			prop: "phone",
-			search: {
-				component: {
-					name: "el-date-picker"
-				}
-			}
+			prop: "phone"
+			// search: {
+			// 	component: {
+			// 		name: "el-date-picker"
+			// 	}
+			// }
 		},
 		{
 			type: "op"

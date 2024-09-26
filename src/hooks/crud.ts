@@ -100,6 +100,7 @@ export function useUpsert<T = any>(options?: ClUpsert.Options<T>) {
 		(val) => {
 			if (val) {
 				if (options) {
+					// console.log(options); // 配置
 					const event = useEvent(["onOpen", "onOpened", "onClosed"], {
 						r: val,
 						options,
@@ -108,6 +109,7 @@ export function useUpsert<T = any>(options?: ClUpsert.Options<T>) {
 					});
 
 					Object.assign(val.config, event);
+					// console.log(val.config);
 				}
 			}
 		},
